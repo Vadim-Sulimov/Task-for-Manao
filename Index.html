@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="Forms.js"></script>
+</head>
+<body>
+
+<form action="FormProcessor.php" id="reg" class="forms" method="post">
+    <fieldset>
+        <legend>Регистрация:</legend>
+        <label class="label_desc">Логин:</label>
+        <input type="text" id="login_user" required>
+        <label id="login_user_error" class="error"></label>
+        <br/>
+
+        <label class="label_desc">Имя:</label>
+        <input type="text" id="name_user" required>
+        <label id="name_user_error" class="error"></label>
+        <br/>
+
+        <label class="label_desc">Электронная почта:</label>
+        <input type="text" id="email_user" required>
+        <label id="email_user_error" class="error"></label>
+        <br/>
+
+        <label class="label_desc">Пароль:</label>
+        <input type="password" id="password_user" required>
+        <label id="password_user_error" class="error"></label>
+        <br/>
+
+        <label class="label_desc">Повторите пароль:</label>
+        <input type="password" id="password2_user" required>
+        <label id="password2_user_error" class="error"></label>
+        <br/>
+
+        <br/>
+        <input type="submit" value="Отправить" id="send_data">
+    </fieldset>
+</form>
+<form action="FormProcessor.php" id="auth" class="forms" method="post">
+    <fieldset>
+        <legend>Авторизация:</legend>
+        <label class="label_desc">Логин:</label>
+        <input type="text" id="login_user_auth" required>
+        <label id="login_user_auth_error" class="error"></label>
+        <br/>
+
+        <label class="label_desc">Пароль:</label>
+        <input type="password" id="password_user_auth" required>
+        <label id="password_user_auth_error" class="error"></label>
+        <br/>
+
+        <br/>
+        <input type="submit" value="Отправить" id="send_data_auth">
+    </fieldset>
+</form>
+</body>
+</html>

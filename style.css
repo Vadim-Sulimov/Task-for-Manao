@@ -1,0 +1,25 @@
+.label_desc {
+    display: block;
+}
+
+.error {
+    display: none;
+}
+
+.error_input {
+    border: 2px solid #FF0000;
+}
+
+#reg {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+}
+
+#auth {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+
+
